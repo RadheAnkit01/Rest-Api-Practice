@@ -78,7 +78,7 @@ class _UserPageState extends State<UserPage> {
                           children: [
                             Center(
                               child: Text(
-                                'Name : ' + usersList[index].name,
+                                'Name : ${usersList[index].name}',
                                 style: TextStyle(
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20,
@@ -87,9 +87,9 @@ class _UserPageState extends State<UserPage> {
                             ),
                             Divider(),
 
-                            Text('ID : ' + usersList[index].id.toString()),
-                            Text('Username : ' + usersList[index].username),
-                            Text('Email : ' + usersList[index].email),
+                            Text('ID : ${usersList[index].id}'),
+                            Text('Username : ${usersList[index].username}'),
+                            Text('Email : ${usersList[index].email}'),
                             Text(
                               'Address : ' +
                                   usersList[index].address.street +
@@ -99,7 +99,7 @@ class _UserPageState extends State<UserPage> {
                                   usersList[index].address.city,
                             ),
                             Text(
-                              'Zipcode : ' + usersList[index].address.zipcode,
+                              'Zipcode : ${usersList[index].address.zipcode}',
                             ),
                             Text(
                               'Location',
@@ -111,13 +111,11 @@ class _UserPageState extends State<UserPage> {
                             Row(
                               children: [
                                 Text(
-                                  'Longitude : ' +
-                                      usersList[index].address.geo.lng,
+                                  'Longitude : ${usersList[index].address.geo.lng}',
                                 ),
                                 SizedBox(width: 15),
                                 Text(
-                                  'Longitude : ' +
-                                      usersList[index].address.geo.lng,
+                                  'Longitude : ${usersList[index].address.geo.lng}',
                                 ),
                               ],
                             ),
