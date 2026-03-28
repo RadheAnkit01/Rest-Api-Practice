@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rest_api/pages/fake_store.dart';
 import 'package:rest_api/pages/login_page.dart';
 import 'package:rest_api/pages/post_page.dart';
 import 'package:rest_api/pages/user_page.dart';
@@ -50,6 +51,16 @@ class MyHomePage extends StatelessWidget {
                 );
               },
               child: Text('Login using api'),
+            ),
+            Divider(),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => FakeStore()),
+                );
+              },
+              child: Text('Fake Store using api'),
             ),
           ],
         ),
